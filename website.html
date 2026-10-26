@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nicholas Sebastian Anggawidjaja – Data Analyst Intern Candidate</title>
+<meta name="description" content="Portfolio of Nicholas Sebastian Anggawidjaja, Computer Science (Database) student at BINUS University seeking a data analyst internship.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F5F7; --surface:#FFFFFF; --ink:#14283B; --muted:#52667A;
+  --line:#D5DEE5; --accent:#0E7C7B; --accent-ink:#FFFFFF; --hi:#E8A33D;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1A25; --surface:#16273A; --ink:#E7EEF4; --muted:#9DB0C2;
+    --line:#2A3F55; --accent:#4FC3C1; --accent-ink:#0F1A25; --hi:#F0B65A;
+  }
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:1.25rem;overflow-x:auto;padding-top:.8rem;padding-bottom:.8rem}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;white-space:nowrap}
+nav a:hover{color:var(--accent)}
+h1,h2{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+h1{font-size:clamp(2.4rem,7vw,4rem)}
+h2{font-size:1.9rem;margin-bottom:1.25rem}
+section{padding:3.5rem 0 0}
+.hero{padding-top:3.5rem}
+.role{color:var(--muted);font-size:1.15rem;margin:.75rem 0 1.75rem;max-width:34rem}
+.query{background:var(--ink);color:#DCE7F0;border-radius:6px;padding:1.1rem 1.25rem;font:400 .9rem/1.8 "IBM Plex Mono",ui-monospace,monospace;overflow-x:auto;max-width:34rem}
+.query .k{color:var(--hi)} .query .s{color:#7FD6D4} .query .c{color:#7F94A8}
+.query .cursor{display:inline-block;width:.55em;height:1em;background:#DCE7F0;vertical-align:-.15em;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.query .cursor{animation:none}}
+.about{max-width:40rem}
+.gpa{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.gpa strong{font:600 3rem/1 Fraunces,Georgia,serif}
+.bar{flex:1 1 220px;max-width:360px}
+.bar div{height:10px;background:var(--line);border-radius:5px;overflow:hidden}
+.bar span{display:block;height:100%;width:79.75%;background:var(--accent)}
+.bar p{margin:.4rem 0 0;color:var(--muted);font-size:.9rem}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{width:100%;border-collapse:collapse;min-width:640px}
+th,td{text-align:left;padding:.9rem 1rem;vertical-align:top;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+th{font:500 .85rem "IBM Plex Mono",monospace;color:var(--muted);background:var(--bg)}
+td:first-child{font-weight:600}
+td.tools{font:400 .85rem/1.6 "IBM Plex Mono",monospace;color:var(--accent)}
+.timeline{list-style:none;margin:0;padding:0 0 0 1.25rem;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 1.75rem 1rem}
+.timeline li::before{content:"";position:absolute;left:-1.6rem;top:.45rem;width:11px;height:11px;border-radius:50%;background:var(--accent)}
+.timeline h3{margin:0;font-size:1.1rem}
+.timeline p{margin:.15rem 0 0;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem 2rem}
+.skills h3{font-size:1rem;margin:0 0 .5rem;color:var(--accent)}
+.skills ul{margin:0;padding:0;list-style:none}
+.skills li{padding:.3rem 0;border-bottom:1px solid var(--line)}
+.contact ul{list-style:none;margin:0 0 1.25rem;padding:0}
+.contact li{padding:.4rem 0}
+.contact b{display:inline-block;min-width:6.5rem;color:var(--muted);font-weight:500}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:.7rem 1.3rem;border-radius:6px;font-weight:600;text-decoration:none}
+.btn:hover{filter:brightness(1.1)}
+footer{margin-top:4rem;padding:1.5rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<nav aria-label="Sections"><div class="wrap">
+  <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+</div></nav>
+
+<main class="wrap">
+<header class="hero">
+  <h1>Nicholas Sebastian Anggawidjaja</h1>
+  <p class="role">Computer Science student specializing in databases, looking for a data analyst internship.</p>
+  <div class="query" aria-label="SQL query describing me">
+<span class="k">SELECT</span> Nicholas, Database Computer Science, BINUS University<br>
+<span class="k">FROM</span> candidates<br>
+<span class="k">WHERE</span> major = <span class="s">'Database Computer Science'</span><br>
+&nbsp;&nbsp;<span class="k">AND</span> seeking = <span class="s">'Data Analyst Internship'</span>;<span class="cursor"></span>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <h2>About me</h2>
+  <p>I’m a Computer Science student at BINUS University majoring in Database. I enjoy turning raw data into clear answers: designing tables, writing queries, cleaning messy datasets, and presenting what they show. I’m looking for a data analyst internship where I can apply my database foundation to real business questions and keep learning from experienced analysts.</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul class="timeline">
+    <li><h3>BINUS University</h3><p>Bachelor of Computer Science, Database major · 2024 – Present </p></li>
+    <li><h3>SMAK 5 Penabur</h3><p>Senior high school · 2021 – 2024</p></li>
+  </ul>
+  <div class="gpa" role="group" aria-label="GPA">
+    <strong>3.19</strong>
+    <div class="bar"><div><span></span></div><p>Current GPA on a 4.00 scale</p></div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Databases</h3><ul><li>SQL (MySQL, SQL Server)</li><li>Database design and normalization</li><li>ERD modeling</li></ul></div>
+    <div><h3>Analysis</h3><ul><li>Data cleaning</li><li>Exploratory data analysis</li><li>Excel / Google Sheets</li></ul></div>
+    <div><h3>Tools and visualization</h3><ul><li>Python (pandas)</li><li>Power BI</li><li>GitHub</li></ul></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th>Project</th><th>Description</th><th>Tools</th><th>Link</th></tr></thead>
+      <tbody>
+        <tr><td>AI Posture Detection</td><td>Posture detection at home to ease detection without the hassle of going to the doctor</td><td class="tools">Github</td><td><a href="https://github.com/nicosebas1510/AI-Posture-Detection">View</a></td></tr>
+        <tr><td>E-Commerce Data Processing</td><td>Data cleaning, preprocessing, and visualization of trends and top KPIs</td><td class="tools">MySQL, Power BI</td><td><a href="#">View</a></td></tr>
+        <tr><td>Diecast Inventory Application</td><td>Ongoing project to help collectors manage their collection</td><td class="tools">SQL Server</td><td><a href="#">View</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <ul>
+    <li><b>Email</b><a href="mailto:you@email.com">nicosebas1510@gmail.com</a></li>
+    <li><b>Phone</b>[+62 811-1784-386]</li>
+    <li><b>LinkedIn</b><a href="https://www.linkedin.com/in/nicholas-sebastian-anggawidjaja-53b490419/">linkedin.com/in/nicholas-sebastian-anggawidjaja</a></li>
+    <li><b>GitHub</b><a href="https://github.com/nicosebas1510">github.com/nicosebas1510</a></li>
+  </ul>
+  <a class="btn" href="mailto:nicosebas1510@gmail.com">Email me</a>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Nicholas Sebastian Anggawidjaja · Jakarta, Indonesia</div></footer>
+</body>
+</html>
